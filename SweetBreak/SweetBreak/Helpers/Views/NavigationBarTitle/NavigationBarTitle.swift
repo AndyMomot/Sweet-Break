@@ -13,8 +13,8 @@ struct NavigationBarTitle: View {
     var body: some View {
         HStack {
             Text(text)
-                .foregroundStyle(.white)
-                .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 40))
+                .foregroundStyle(.darkPurple)
+                .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 28))
             Spacer()
         }
         .navigationBarBackButtonHidden()

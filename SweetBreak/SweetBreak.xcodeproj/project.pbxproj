@@ -18,7 +18,6 @@
 		473332EA2D678D510025D08B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332762D678D510025D08B /* ImagePicker.swift */; };
 		473332EB2D678D510025D08B /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332782D678D510025D08B /* ShareSheet.swift */; };
 		473332EC2D678D510025D08B /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733327A2D678D510025D08B /* BackButton.swift */; };
-		473332ED2D678D510025D08B /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733327C2D678D510025D08B /* CircularProgressBar.swift */; };
 		473332EE2D678D510025D08B /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733327E2D678D510025D08B /* CustomProgressView.swift */; };
 		473332EF2D678D510025D08B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332802D678D510025D08B /* CustomTextField.swift */; };
 		473332F02D678D510025D08B /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332822D678D510025D08B /* DatePickerView.swift */; };
@@ -59,6 +58,11 @@
 		473333252D678D510025D08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473332DD2D678D510025D08B /* Assets.xcassets */; };
 		473333272D678D510025D08B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473332E02D678D510025D08B /* LaunchScreen.storyboard */; };
 		473333292D678D640025D08B /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 473333282D678D640025D08B /* swiftgen.yml */; };
+		473333482D67A5F90025D08B /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473333422D67A5F90025D08B /* SettingsButton.swift */; };
+		473333492D67A5F90025D08B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473333442D67A5F90025D08B /* SettingsView.swift */; };
+		4733334A2D67A5F90025D08B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473333452D67A5F90025D08B /* SettingsViewModel.swift */; };
+		473333532D67A6180025D08B /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473333502D67A6180025D08B /* EditProfileView.swift */; };
+		473333542D67A6180025D08B /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473333512D67A6180025D08B /* EditProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +78,6 @@
 		473332762D678D510025D08B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		473332782D678D510025D08B /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		4733327A2D678D510025D08B /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
-		4733327C2D678D510025D08B /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		4733327E2D678D510025D08B /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		473332802D678D510025D08B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		473332822D678D510025D08B /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
@@ -116,6 +119,11 @@
 		473332DE2D678D510025D08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473332DF2D678D510025D08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		473333282D678D640025D08B /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		473333422D67A5F90025D08B /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		473333442D67A5F90025D08B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		473333452D67A5F90025D08B /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		473333502D67A6180025D08B /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		473333512D67A6180025D08B /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,14 +200,6 @@
 			path = BackButton;
 			sourceTree = "<group>";
 		};
-		4733327D2D678D510025D08B /* CircularProgress */ = {
-			isa = PBXGroup;
-			children = (
-				4733327C2D678D510025D08B /* CircularProgressBar.swift */,
-			);
-			path = CircularProgress;
-			sourceTree = "<group>";
-		};
 		4733327F2D678D510025D08B /* CustomProgressView */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				4733327B2D678D510025D08B /* BackButton */,
-				4733327D2D678D510025D08B /* CircularProgress */,
 				4733327F2D678D510025D08B /* CustomProgressView */,
 				473332812D678D510025D08B /* CustomTextField */,
 				473332832D678D510025D08B /* DatePicker */,
@@ -385,6 +384,7 @@
 		473332D02D678D510025D08B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				473333472D67A5F90025D08B /* SettingsGroup */,
 				473332C92D678D510025D08B /* TabBar */,
 			);
 			path = Main;
@@ -459,6 +459,42 @@
 				473332E02D678D510025D08B /* LaunchScreen.storyboard */,
 			);
 			path = SweetBreak;
+			sourceTree = "<group>";
+		};
+		473333432D67A5F90025D08B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				473333422D67A5F90025D08B /* SettingsButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		473333462D67A5F90025D08B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				473333432D67A5F90025D08B /* Views */,
+				473333442D67A5F90025D08B /* SettingsView.swift */,
+				473333452D67A5F90025D08B /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		473333472D67A5F90025D08B /* SettingsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				473333462D67A5F90025D08B /* Settings */,
+				473333522D67A6180025D08B /* EditProfile */,
+			);
+			path = SettingsGroup;
+			sourceTree = "<group>";
+		};
+		473333522D67A6180025D08B /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				473333502D67A6180025D08B /* EditProfileView.swift */,
+				473333512D67A6180025D08B /* EditProfileViewModel.swift */,
+			);
+			path = EditProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -572,6 +608,8 @@
 			files = (
 				473332E22D678D510025D08B /* AppDelegate.swift in Sources */,
 				473332E32D678D510025D08B /* RootViewController.swift in Sources */,
+				473333532D67A6180025D08B /* EditProfileView.swift in Sources */,
+				473333542D67A6180025D08B /* EditProfileViewModel.swift in Sources */,
 				473332E42D678D510025D08B /* SceneDelegate.swift in Sources */,
 				473332E52D678D510025D08B /* Date+Additions.swift in Sources */,
 				473332E62D678D510025D08B /* Double+Additions.swift in Sources */,
@@ -581,7 +619,6 @@
 				473332EA2D678D510025D08B /* ImagePicker.swift in Sources */,
 				473332EB2D678D510025D08B /* ShareSheet.swift in Sources */,
 				473332EC2D678D510025D08B /* BackButton.swift in Sources */,
-				473332ED2D678D510025D08B /* CircularProgressBar.swift in Sources */,
 				473332EE2D678D510025D08B /* CustomProgressView.swift in Sources */,
 				473332EF2D678D510025D08B /* CustomTextField.swift in Sources */,
 				473332F02D678D510025D08B /* DatePickerView.swift in Sources */,
@@ -601,6 +638,9 @@
 				4733330C2D678D510025D08B /* TabBar.swift in Sources */,
 				4733330D2D678D510025D08B /* TabBarCustomView.swift in Sources */,
 				4733330E2D678D510025D08B /* TabBarViewModel.swift in Sources */,
+				473333482D67A5F90025D08B /* SettingsButton.swift in Sources */,
+				473333492D67A5F90025D08B /* SettingsView.swift in Sources */,
+				4733334A2D67A5F90025D08B /* SettingsViewModel.swift in Sources */,
 				473333132D678D510025D08B /* OnboardingView.swift in Sources */,
 				473333142D678D510025D08B /* OnboardingViewModel.swift in Sources */,
 				473333152D678D510025D08B /* OnboardingViewTabView.swift in Sources */,

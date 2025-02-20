@@ -21,7 +21,7 @@ struct CustomTextField: View {
                     TextEditor(text: $text)
                         .scrollContentBackground(.hidden)
                         .foregroundStyle(.ashGray)
-                        .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 24))
+                        .font(Fonts.SFProDisplay.semibold.swiftUIFont(size: 16))
                         .padding(.horizontal, 12)
                         .padding(.vertical, 28)
                         .keyboardType(keyboardType)
@@ -31,8 +31,8 @@ struct CustomTextField: View {
                                           isDynamic: isDynamic)
                     }
                 }
-                .background(.black.opacity(0.5))
-                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .background(.softLilac)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
                 
             } else {
                 HStack {
@@ -40,18 +40,18 @@ struct CustomTextField: View {
                         createPlaceholder(text: placeholder,
                                           isDynamic: isDynamic)
                     }
-                    .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 24))
+                    .font(Fonts.SFProDisplay.semibold.swiftUIFont(size: 16))
                     .keyboardType(keyboardType)
                     
                     if showPencil {
                         Image(systemName: "pencil")
                     }
                 }
-                .foregroundStyle(.ashGray)
+                .foregroundStyle(.deepOrchid)
                 .padding(.horizontal, 30)
-                .padding(.vertical, 10)
-                .background(.black.opacity(0.5))
-                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .padding(.vertical)
+                .background(.softLilac)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
             }
         }
         .hideKeyboardWhenTappedAround()
@@ -62,8 +62,8 @@ struct CustomTextField: View {
 private extension CustomTextField {
     func createPlaceholder(text: String, isDynamic: Bool) -> some View {
         return Text(text)
-            .font(Fonts.SFProDisplay.lightItalic.swiftUIFont(size: 24))
-            .foregroundStyle(.ashGray)
+            .font(Fonts.SFProDisplay.lightItalic.swiftUIFont(size: 16))
+            .foregroundStyle(.deepOrchid)
             .padding(.horizontal, isDynamic ? 16 : 0)
             .padding(.vertical, isDynamic ? 30 : 0)
             .allowsHitTesting(false)
@@ -72,7 +72,7 @@ private extension CustomTextField {
 
 #Preview {
     ZStack {
-        Asset.preloaderBg.swiftUIImage
+        Asset.background.swiftUIImage
             .resizable()
             .ignoresSafeArea()
         

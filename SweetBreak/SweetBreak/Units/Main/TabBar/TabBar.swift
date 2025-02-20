@@ -22,7 +22,7 @@ struct TabBar: View {
                     .tag(TabBarSelectionView.notes.rawValue)
                     .environmentObject(viewModel)
                 
-                Text("Settings")
+                SettingsView()
                     .tag(TabBarSelectionView.settings.rawValue)
             }
             

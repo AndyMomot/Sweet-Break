@@ -39,8 +39,8 @@ struct BackButton: View {
                     .hidden()
             }
         }
-        .foregroundStyle(.white)
-        .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 20))
+        .foregroundStyle(.darkPurple)
+        .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 18))
         .navigationBarBackButtonHidden()
     }
 }

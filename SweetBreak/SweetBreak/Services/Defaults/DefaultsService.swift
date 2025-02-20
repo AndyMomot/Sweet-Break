@@ -31,13 +31,13 @@ extension DefaultsService {
 }
  
 extension DefaultsService {
-    var user: User {
+    var user: User? {
         get {
             if let data = standard.data(forKey: Keys.user.rawValue),
                let user = try? JSONDecoder().decode(User.self, from: data) {
                 return user
             }
-            return .init(name: "Nickname")
+            return nil
         }
         set {
             if let data = try? JSONEncoder().encode(newValue) {
