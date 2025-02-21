@@ -75,7 +75,7 @@ extension View {
 extension View {
     func shadowModifier() -> some View {
         self
-            .shadow(color: .ashGray.opacity(0.25), radius: 4,
+            .shadow(color: .black.opacity(0.25), radius: 4,
                     x: -4, y: -4)
             .shadow(color: .black.opacity(0.25), radius: 4,
                     x: 4, y: 4)

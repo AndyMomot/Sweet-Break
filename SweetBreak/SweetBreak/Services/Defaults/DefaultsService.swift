@@ -46,32 +46,17 @@ extension DefaultsService {
         }
     }
     
-    var completedWorkoutTasks: [WorkoutTask] {
+    var notes: [Note] {
         get {
-            if let data = standard.data(forKey: Keys.completedWorkoutTasks.rawValue),
-               let items = try? JSONDecoder().decode([WorkoutTask].self, from: data) {
+            if let data = standard.data(forKey: Keys.notes.rawValue),
+               let items = try? JSONDecoder().decode([Note].self, from: data) {
                 return items
             }
             return []
         }
         set {
             if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.completedWorkoutTasks.rawValue)
-            }
-        }
-    }
-    
-    var customWorkoutTasks: [WorkoutTask] {
-        get {
-            if let data = standard.data(forKey: Keys.customWorkoutTasks.rawValue),
-               let items = try? JSONDecoder().decode([WorkoutTask].self, from: data) {
-                return items
-            }
-            return []
-        }
-        set {
-            if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.customWorkoutTasks.rawValue)
+                standard.set(data, forKey: Keys.notes.rawValue)
             }
         }
     }
@@ -82,7 +67,6 @@ extension DefaultsService {
     enum Keys: String {
         case flow
         case user
-        case completedWorkoutTasks
-        case customWorkoutTasks
+        case notes
     }
 }

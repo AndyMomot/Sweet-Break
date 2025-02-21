@@ -31,7 +31,7 @@ struct MenuPicker: View {
                         onAdd?()
                     } label: {
                         Image(systemName: "plus")
-                            .foregroundStyle(.mist)
+                            .foregroundStyle(.gray)
                             .fontWeight(.medium)
                             .padding(4)
                     }
@@ -51,25 +51,25 @@ struct MenuPicker: View {
                 HStack {
                     if items.isEmpty {
                         Text("Pusty")
-                            .foregroundStyle(.mist)
+                            .foregroundStyle(.gray)
                             .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 16))
                         
                         Spacer()
                         
                     } else {
                         Text(selection.isEmpty ? "Wybierać" : selection)
-                            .foregroundStyle(.mist)
+                            .foregroundStyle(.gray)
                             .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 16))
                         
                         Spacer()
                         
                         Image(systemName: "chevron.down")
-                            .foregroundStyle(.mist)
+                            .foregroundStyle(.gray)
                     }
                 }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 28)
-                .background(LinearGradientBackground())
+                .background()
                 .cornerRadius(8, corners: .allCorners)
                 .shadowModifier()
             }
@@ -79,9 +79,6 @@ struct MenuPicker: View {
 
 #Preview {
     ZStack {
-        LinearGradientBackground()
-            .ignoresSafeArea()
-        
         VStack {
             MenuPicker(
                 title: "Title",

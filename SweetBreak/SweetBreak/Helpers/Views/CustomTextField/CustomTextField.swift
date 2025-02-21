@@ -20,7 +20,7 @@ struct CustomTextField: View {
                 ZStack(alignment: .topLeading) {
                     TextEditor(text: $text)
                         .scrollContentBackground(.hidden)
-                        .foregroundStyle(.ashGray)
+                        .foregroundStyle(.deepOrchid)
                         .font(Fonts.SFProDisplay.semibold.swiftUIFont(size: 16))
                         .padding(.horizontal, 12)
                         .padding(.vertical, 28)

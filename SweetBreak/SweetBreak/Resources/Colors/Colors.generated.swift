@@ -27,16 +27,6 @@ internal enum Colors {
   internal static let lightPink = ColorAsset(name: "lightPink")
   internal static let softLilac = ColorAsset(name: "softLilac")
   internal static let softPink = ColorAsset(name: "softPink")
-  internal static let ashGray = ColorAsset(name: "ashGray")
-  internal static let darkRed = ColorAsset(name: "darkRed")
-  internal static let deepIndigo = ColorAsset(name: "deepIndigo")
-  internal static let deepPlum = ColorAsset(name: "deepPlum")
-  internal static let graphite = ColorAsset(name: "graphite")
-  internal static let greenCustom = ColorAsset(name: "greenCustom")
-  internal static let mist = ColorAsset(name: "mist")
-  internal static let orangeCustom = ColorAsset(name: "orangeCustom")
-  internal static let redCustom = ColorAsset(name: "redCustom")
-  internal static let yellowCustom = ColorAsset(name: "yellowCustom")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

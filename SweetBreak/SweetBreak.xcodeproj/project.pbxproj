@@ -21,7 +21,6 @@
 		473332EE2D678D510025D08B /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733327E2D678D510025D08B /* CustomProgressView.swift */; };
 		473332EF2D678D510025D08B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332802D678D510025D08B /* CustomTextField.swift */; };
 		473332F02D678D510025D08B /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332822D678D510025D08B /* DatePickerView.swift */; };
-		473332F12D678D510025D08B /* LinearGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332842D678D510025D08B /* LinearGradientBackground.swift */; };
 		473332F22D678D510025D08B /* MenuPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332862D678D510025D08B /* MenuPicker.swift */; };
 		473332F32D678D510025D08B /* NavigationBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473332882D678D510025D08B /* NavigationBarTitle.swift */; };
 		473332F42D678D510025D08B /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733328A2D678D510025D08B /* NextButton.swift */; };
@@ -63,6 +62,15 @@
 		4733334A2D67A5F90025D08B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473333452D67A5F90025D08B /* SettingsViewModel.swift */; };
 		473333532D67A6180025D08B /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473333502D67A6180025D08B /* EditProfileView.swift */; };
 		473333542D67A6180025D08B /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473333512D67A6180025D08B /* EditProfileViewModel.swift */; };
+		47333B3C2D68E8FD0025D08B /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B3B2D68E8FD0025D08B /* TipsView.swift */; };
+		47333B3E2D68E9090025D08B /* TipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B3D2D68E9090025D08B /* TipsViewModel.swift */; };
+		47333B442D68EBB90025D08B /* TipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B422D68EBB90025D08B /* TipCell.swift */; };
+		47333B462D68EDEC0025D08B /* TipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B452D68EDEC0025D08B /* TipDetailView.swift */; };
+		47333B4E2D68F0EF0025D08B /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B4D2D68F0EF0025D08B /* NotesView.swift */; };
+		47333B502D68F0F80025D08B /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B4F2D68F0F80025D08B /* NotesViewModel.swift */; };
+		47333B562D68F37A0025D08B /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B542D68F37A0025D08B /* NoteCell.swift */; };
+		47333B582D68F4E20025D08B /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B572D68F4E20025D08B /* AddNoteView.swift */; };
+		47333B5A2D68F4E70025D08B /* AddNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47333B592D68F4E70025D08B /* AddNoteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +89,6 @@
 		4733327E2D678D510025D08B /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		473332802D678D510025D08B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		473332822D678D510025D08B /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
-		473332842D678D510025D08B /* LinearGradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientBackground.swift; sourceTree = "<group>"; };
 		473332862D678D510025D08B /* MenuPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPicker.swift; sourceTree = "<group>"; };
 		473332882D678D510025D08B /* NavigationBarTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTitle.swift; sourceTree = "<group>"; };
 		4733328A2D678D510025D08B /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
@@ -124,6 +131,15 @@
 		473333452D67A5F90025D08B /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		473333502D67A6180025D08B /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		473333512D67A6180025D08B /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		47333B3B2D68E8FD0025D08B /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		47333B3D2D68E9090025D08B /* TipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewModel.swift; sourceTree = "<group>"; };
+		47333B422D68EBB90025D08B /* TipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCell.swift; sourceTree = "<group>"; };
+		47333B452D68EDEC0025D08B /* TipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipDetailView.swift; sourceTree = "<group>"; };
+		47333B4D2D68F0EF0025D08B /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		47333B4F2D68F0F80025D08B /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		47333B542D68F37A0025D08B /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		47333B572D68F4E20025D08B /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		47333B592D68F4E70025D08B /* AddNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,14 +240,6 @@
 			path = DatePicker;
 			sourceTree = "<group>";
 		};
-		473332852D678D510025D08B /* LinearGradientBackground */ = {
-			isa = PBXGroup;
-			children = (
-				473332842D678D510025D08B /* LinearGradientBackground.swift */,
-			);
-			path = LinearGradientBackground;
-			sourceTree = "<group>";
-		};
 		473332872D678D510025D08B /* MenuPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +279,6 @@
 				4733327F2D678D510025D08B /* CustomProgressView */,
 				473332812D678D510025D08B /* CustomTextField */,
 				473332832D678D510025D08B /* DatePicker */,
-				473332852D678D510025D08B /* LinearGradientBackground */,
 				473332872D678D510025D08B /* MenuPicker */,
 				473332892D678D510025D08B /* NavigationBarTitle */,
 				4733328B2D678D510025D08B /* NextButton */,
@@ -384,6 +391,8 @@
 		473332D02D678D510025D08B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				47333B4C2D68F0D60025D08B /* NotesGroup */,
+				47333B3A2D68E8F10025D08B /* TipsGroup */,
 				473333472D67A5F90025D08B /* SettingsGroup */,
 				473332C92D678D510025D08B /* TabBar */,
 			);
@@ -497,6 +506,77 @@
 			path = EditProfile;
 			sourceTree = "<group>";
 		};
+		47333B382D68E8F10025D08B /* TipDetail */ = {
+			isa = PBXGroup;
+			children = (
+				47333B452D68EDEC0025D08B /* TipDetailView.swift */,
+			);
+			path = TipDetail;
+			sourceTree = "<group>";
+		};
+		47333B392D68E8F10025D08B /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				47333B432D68EBB90025D08B /* Views */,
+				47333B3B2D68E8FD0025D08B /* TipsView.swift */,
+				47333B3D2D68E9090025D08B /* TipsViewModel.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		47333B3A2D68E8F10025D08B /* TipsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				47333B392D68E8F10025D08B /* Tips */,
+				47333B382D68E8F10025D08B /* TipDetail */,
+			);
+			path = TipsGroup;
+			sourceTree = "<group>";
+		};
+		47333B432D68EBB90025D08B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47333B422D68EBB90025D08B /* TipCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47333B4A2D68F0D60025D08B /* AddNote */ = {
+			isa = PBXGroup;
+			children = (
+				47333B572D68F4E20025D08B /* AddNoteView.swift */,
+				47333B592D68F4E70025D08B /* AddNoteViewModel.swift */,
+			);
+			path = AddNote;
+			sourceTree = "<group>";
+		};
+		47333B4B2D68F0D60025D08B /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				47333B552D68F37A0025D08B /* Views */,
+				47333B4D2D68F0EF0025D08B /* NotesView.swift */,
+				47333B4F2D68F0F80025D08B /* NotesViewModel.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		47333B4C2D68F0D60025D08B /* NotesGroup */ = {
+			isa = PBXGroup;
+			children = (
+				47333B4B2D68F0D60025D08B /* Notes */,
+				47333B4A2D68F0D60025D08B /* AddNote */,
+			);
+			path = NotesGroup;
+			sourceTree = "<group>";
+		};
+		47333B552D68F37A0025D08B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47333B542D68F37A0025D08B /* NoteCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -606,12 +686,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47333B502D68F0F80025D08B /* NotesViewModel.swift in Sources */,
 				473332E22D678D510025D08B /* AppDelegate.swift in Sources */,
 				473332E32D678D510025D08B /* RootViewController.swift in Sources */,
 				473333532D67A6180025D08B /* EditProfileView.swift in Sources */,
 				473333542D67A6180025D08B /* EditProfileViewModel.swift in Sources */,
 				473332E42D678D510025D08B /* SceneDelegate.swift in Sources */,
+				47333B582D68F4E20025D08B /* AddNoteView.swift in Sources */,
 				473332E52D678D510025D08B /* Date+Additions.swift in Sources */,
+				47333B562D68F37A0025D08B /* NoteCell.swift in Sources */,
 				473332E62D678D510025D08B /* Double+Additions.swift in Sources */,
 				473332E72D678D510025D08B /* String+Additions.swift in Sources */,
 				473332E82D678D510025D08B /* UINavigationController+Additions.swift in Sources */,
@@ -620,10 +703,13 @@
 				473332EB2D678D510025D08B /* ShareSheet.swift in Sources */,
 				473332EC2D678D510025D08B /* BackButton.swift in Sources */,
 				473332EE2D678D510025D08B /* CustomProgressView.swift in Sources */,
+				47333B3E2D68E9090025D08B /* TipsViewModel.swift in Sources */,
 				473332EF2D678D510025D08B /* CustomTextField.swift in Sources */,
 				473332F02D678D510025D08B /* DatePickerView.swift in Sources */,
-				473332F12D678D510025D08B /* LinearGradientBackground.swift in Sources */,
+				47333B4E2D68F0EF0025D08B /* NotesView.swift in Sources */,
+				47333B442D68EBB90025D08B /* TipCell.swift in Sources */,
 				473332F22D678D510025D08B /* MenuPicker.swift in Sources */,
+				47333B3C2D68E8FD0025D08B /* TipsView.swift in Sources */,
 				473332F32D678D510025D08B /* NavigationBarTitle.swift in Sources */,
 				473332F42D678D510025D08B /* NextButton.swift in Sources */,
 				473332F52D678D510025D08B /* SwiftUIViewWebView.swift in Sources */,
@@ -635,8 +721,10 @@
 				473332FB2D678D510025D08B /* DefaultsService.swift in Sources */,
 				473332FC2D678D510025D08B /* FileManager+Image.swift in Sources */,
 				473332FD2D678D510025D08B /* FileManagerService.swift in Sources */,
+				47333B5A2D68F4E70025D08B /* AddNoteViewModel.swift in Sources */,
 				4733330C2D678D510025D08B /* TabBar.swift in Sources */,
 				4733330D2D678D510025D08B /* TabBarCustomView.swift in Sources */,
+				47333B462D68EDEC0025D08B /* TipDetailView.swift in Sources */,
 				4733330E2D678D510025D08B /* TabBarViewModel.swift in Sources */,
 				473333482D67A5F90025D08B /* SettingsButton.swift in Sources */,
 				473333492D67A5F90025D08B /* SettingsView.swift in Sources */,
