@@ -35,7 +35,7 @@ extension EditProfileView.ViewModel {
         }
     }
     
-    func save() async -> Bool {
+    func save() async {
         let shared = DefaultsService.shared
         
         if var user = shared.user {
@@ -43,12 +43,10 @@ extension EditProfileView.ViewModel {
             user.nickname = nickname
             shared.user = user
             await updateImage(forId: user.id)
-            return true
         } else {
             let user = User(name: name, nickname: nickname)
             shared.user = user
             await updateImage(forId: user.id)
-            return true
         }
     }
     

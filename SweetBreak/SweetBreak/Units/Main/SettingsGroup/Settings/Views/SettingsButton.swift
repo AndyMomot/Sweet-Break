@@ -18,7 +18,10 @@ struct SettingsButton: View {
             action()
         } label: {
             HStack(spacing: 16) {
-                Image(imageName)
+                if !imageName.isEmpty {
+                    Image(imageName)
+                }
+                
                 VStack(alignment: .leading, spacing: 4) {
                     Text(title)
                         .foregroundStyle(.darkPurple)

@@ -23,6 +23,24 @@ extension AddNoteView {
 }
 
 extension AddNoteView.ViewModel {
+    func onNext() async {
+        switch viewState {
+        case .add:
+            let note = Note(
+                title: title,
+                text: text,
+                priority: selectedPriority
+            )
+            
+            DefaultsService.shared.notes.append(note)
+            
+        case .edit(let note):
+            DefaultsService.shared.notes.removeAll(where: { $0.id == note.id })
+        }
+    }
+}
+
+private extension AddNoteView.ViewModel {
     func onSet() async {
         switch viewState {
         case .add:
@@ -49,6 +67,15 @@ extension AddNoteView {
                 return "Adding"
             case .edit:
                 return "Details"
+            }
+        }
+        
+        var next: String {
+            switch self {
+            case .add:
+                return "Save"
+            case .edit:
+                return "Delete"
             }
         }
     }

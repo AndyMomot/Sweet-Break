@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct EditProfileView: View {
-    var onDismiss: () -> Void
     
     @StateObject private var viewModel = ViewModel()
     @Environment(\.dismiss) private var dismiss
@@ -69,10 +68,8 @@ struct EditProfileView: View {
                 
                 NextButton(title: "Save") {
                     Task {
-                        if await viewModel.save() {
-                            onDismiss()
-                            dismiss.callAsFunction()
-                        }
+                        await viewModel.save()
+                        dismiss.callAsFunction()
                     }
                 }
             }
@@ -89,5 +86,5 @@ struct EditProfileView: View {
 }
 
 #Preview {
-    EditProfileView {}
+    EditProfileView()
 }

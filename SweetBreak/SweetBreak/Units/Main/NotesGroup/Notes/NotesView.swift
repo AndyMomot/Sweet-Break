@@ -24,7 +24,7 @@ struct NotesView: View {
                         VStack(spacing: 16) {
                             ForEach(viewModel.notes) { note in
                                 NavigationLink {
-                                    
+                                    AddNoteView(state: .edit(note: note))
                                 } label: {
                                     NoteCell(note: note)
                                 }
@@ -34,16 +34,17 @@ struct NotesView: View {
                     .scrollIndicators(.never)
                     
                     NextButton(title: "Add note") {
-                        
+                        viewModel.showAddNote.toggle()
                     }
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
             }
             .onAppear {
-                Task {
-                    await viewModel.getNotes()
-                }
+                Task { await viewModel.getNotes() }
+            }
+            .navigationDestination(isPresented: $viewModel.showAddNote) {
+                AddNoteView(state: .add)
             }
         }
     }

@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct AddNoteView: View {
+    @Environment(\.dismiss) private var dismiss
     @StateObject private var viewModel: ViewModel
     
-    init(state: ViewState, viewModel: ViewModel = .init()) {
+    init(state: ViewState,
+         viewModel: ViewModel = .init()) {
         viewModel.viewState = state
         _viewModel = StateObject(wrappedValue: viewModel)
     }
@@ -30,19 +32,33 @@ struct AddNoteView: View {
                                         text: $viewModel.title)
                         
                         CustomTextField(placeholder: "Text",
+                                        isDynamic: true,
                                         text: $viewModel.text)
+                        .frame(minHeight: 140)
                         
                         Picker("Energy level", selection: $viewModel.selectedPriority) {
                             ForEach(viewModel.priorities, id: \.rawValue) { priority in
                                 Text(priority.displayName)
+                                    .foregroundStyle(.darkPurple)
+                                    .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 16))
                                     .tag(priority)
                             }
                         }
                         .pickerStyle(.segmented)
+                        .padding(10)
+                        .background(.softLilac)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
                     }
-                    .padding(.bottom)
                 }
                 .scrollIndicators(.never)
+                
+                NextButton(title: viewModel.viewState.next) {
+                    Task {
+                        await viewModel.onNext()
+                        dismiss.callAsFunction()
+                    }
+                }
+                .padding(.bottom)
             }
             .padding(.horizontal)
         }

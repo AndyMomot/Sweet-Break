@@ -16,6 +16,7 @@ extension SettingsView {
         
         @Published var showEditProfile = false
         @Published var showPrivacy = false
+        @Published var showExitAlert = false
         
         let privacyPolicyURL = URL(string: "https://google.com")
         let appStoreURL = URL(string: "https://apps.apple.com/app/id6740994248")
@@ -39,5 +40,10 @@ extension SettingsView.ViewModel {
                 self.userImage = image
             }
         }
+    }
+    
+    func removeData() async {
+        DefaultsService.shared.removeAll()
+        FileManagerService().removeAllFiles()
     }
 }

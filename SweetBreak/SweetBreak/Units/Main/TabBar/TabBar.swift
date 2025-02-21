@@ -12,18 +12,16 @@ struct TabBar: View {
             TabView(selection: $viewModel.selection) {
                 Text("Home")
                     .tag(TabBarSelectionView.home.rawValue)
-                    .environmentObject(viewModel)
                 
                 TipsView()
                     .tag(TabBarSelectionView.tips.rawValue)
-                    .environmentObject(viewModel)
                 
-                Text("Notes")
+                NotesView()
                     .tag(TabBarSelectionView.notes.rawValue)
-                    .environmentObject(viewModel)
                 
                 SettingsView()
                     .tag(TabBarSelectionView.settings.rawValue)
+                    .environmentObject(viewModel)
             }
             
             if viewModel.isShowTabBar {

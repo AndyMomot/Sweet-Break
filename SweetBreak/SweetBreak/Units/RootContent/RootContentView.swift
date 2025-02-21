@@ -1,10 +1,3 @@
-//
-//  RootContentView.swift
-//  Libarorent
-//
-//  Created by Andrii Momot on 06.10.2024.
-//
-
 import SwiftUI
 
 struct RootContentView: View {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject private var rootViewModel: RootContentView.ViewModel
     @StateObject private var viewModel = ViewModel()
     private var bounds: CGRect { UIScreen.main.bounds }
     
@@ -64,23 +65,37 @@ struct SettingsView: View {
                         }
                     }
                     .scrollIndicators(.never)
+                    
+                    NextButton(title: "Exit") {
+                        viewModel.showExitAlert.toggle()
+                    }
                 }
                 .padding(.horizontal)
             }
-            .navigationDestination(isPresented: $viewModel.showEditProfile) {
-                EditProfileView {
-                    Task {
-                        await viewModel.getUser()
-                    }
+            .onAppear {
+                Task {
+                    await viewModel.getUser()
                 }
+            }
+            .navigationDestination(isPresented: $viewModel.showEditProfile) {
+                EditProfileView()
             }
             .sheet(isPresented: $viewModel.showPrivacy) {
                 SwiftUIViewWebView(url: viewModel.privacyPolicyURL)
             }
-        }
-        .onAppear {
-            Task {
-                await viewModel.getUser()
+            .alert("Clear data and exit",
+                   isPresented: $viewModel.showExitAlert) {
+                Button("Cancel", role: .cancel) {}
+                Button("Confirm", role: .destructive) {
+                    Task {
+                        await viewModel.removeData()
+                        await MainActor.run {
+                            rootViewModel.setFlow(.onboarding)
+                        }
+                    }
+                }
+            } message: {
+                Text("Are you sure you want to close the application and delete all data?")
             }
         }
     }

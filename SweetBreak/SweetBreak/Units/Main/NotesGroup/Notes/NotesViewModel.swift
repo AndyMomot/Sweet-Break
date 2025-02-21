@@ -10,6 +10,7 @@ import Foundation
 extension NotesView {
     final class ViewModel: ObservableObject {
         @Published var notes = [Note]()
+        @Published var showAddNote = false
     }
 }
 
