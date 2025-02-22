@@ -25,15 +25,14 @@ extension NotesView.ViewModel {
 
 
 // MARK: Note -
-struct Note: Codable {
+struct Note: Codable, Identifiable {
+    private(set) var id = UUID().uuidString
     var title: String
     var text: String
     var priority: Priority
 }
 
-extension Note: Identifiable {
-    var id: String { UUID().uuidString }
-    
+extension Note {
     enum Priority: Int, Codable, CaseIterable {
         case low = 0
         case medium

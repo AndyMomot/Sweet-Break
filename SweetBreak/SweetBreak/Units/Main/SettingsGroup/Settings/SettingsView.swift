@@ -69,6 +69,7 @@ struct SettingsView: View {
                     NextButton(title: "Exit") {
                         viewModel.showExitAlert.toggle()
                     }
+                    .padding(.bottom)
                 }
                 .padding(.horizontal)
             }

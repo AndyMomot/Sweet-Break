@@ -10,7 +10,7 @@ struct TabBar: View {
     var body: some View {
         VStack(spacing: .zero) {
             TabView(selection: $viewModel.selection) {
-                Text("Home")
+                HomeView()
                     .tag(TabBarSelectionView.home.rawValue)
                 
                 TipsView()

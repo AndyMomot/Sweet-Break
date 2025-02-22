@@ -60,6 +60,26 @@ extension DefaultsService {
             }
         }
     }
+    
+    var daysWithoutSugar: [Date] {
+        get {
+            if let data = standard.data(forKey: Keys.daysWithoutSugar.rawValue),
+               let items = try? JSONDecoder().decode([Date].self, from: data) {
+                return items
+            }
+            return []
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.set(data, forKey: Keys.daysWithoutSugar.rawValue)
+            }
+        }
+    }
+    
+    var lastMoodQuestionDate: Date? {
+        get { standard.object(forKey: Keys.lastMoodQuestionDate.rawValue) as? Date }
+        set { standard.set(newValue, forKey: Keys.lastMoodQuestionDate.rawValue) }
+    }
 }
 
 // MARK: - Keys
@@ -68,5 +88,7 @@ extension DefaultsService {
         case flow
         case user
         case notes
+        case daysWithoutSugar
+        case lastMoodQuestionDate
     }
 }

@@ -98,5 +98,6 @@ extension Date {
         case ddMMYYHHmm = "dd.MM.yy HH:mm"
         case dayOfWeek = "EEEE"
         case month = "MMMM"
+        case dayOfWeekMonthDay = "E, MMM d"
     }
 }

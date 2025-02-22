@@ -36,20 +36,22 @@ struct EditProfileView: View {
                         viewModel.showImagePicker.toggle()
                     }
                     .overlay {
-                        VStack {
-                            Spacer()
-                            HStack {
+                        if viewModel.image != Asset.logo.image {
+                            VStack {
                                 Spacer()
-                                Button {
-                                    withAnimation {
-                                        viewModel.image = Asset.logo.image
+                                HStack {
+                                    Spacer()
+                                    Button {
+                                        withAnimation {
+                                            viewModel.image = Asset.logo.image
+                                        }
+                                    } label: {
+                                        Image(systemName: "trash")
+                                            .foregroundStyle(.white)
+                                            .padding()
+                                            .background(.deepOrchid)
+                                            .clipShape(Circle())
                                     }
-                                } label: {
-                                    Image(systemName: "trash")
-                                        .foregroundStyle(.white)
-                                        .padding()
-                                        .background(.deepOrchid)
-                                        .clipShape(Circle())
                                 }
                             }
                         }
